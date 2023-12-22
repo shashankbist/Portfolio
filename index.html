@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shashank Singh Bist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+        color: white;
+        font-family: "Montserrat";
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        width: 95%;
+        margin-left: 40px;
+        background-color: midnightblue;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      main hr {
+        border: 0;
+        background-color: midnightblue;
+        height: 2px;
+        margin: 40px 40px;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(235, 132, 235);
+        font-size: 1.05rem;
+      }
+      .left {
+        font-size: 1.5rem;
+        text-decoration: none;
+      }
+      /* .background{
+            background-image: url(./Images/IMG_1982.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            position: relative;
+        } */
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 180px 0;
+      }
+      .firstSection > div {
+        width: 40%;
+      }
+      .leftSection {
+        padding: 0;
+        font-size: 2.5rem;
+        margin: 150px 0 0 150px;
+      }
+
+      .leftSection .btn{
+        padding: 12px;
+        background-color: rgb(31, 31, 78);
+        color: white;
+        font-size: 20px;
+        border: 1px solid white;
+        border-radius: 3px;
+        margin-top: 50px;
+        cursor: pointer;
+      }
+
+      .rightSection {
+        width: 600px;
+        height: 450px;
+        margin-right: 100px;
+      }
+      .rightSection img {
+        width: 100%;
+        height: 100%;
+      }
+      .name {
+        color: aqua;
+      }
+      .title {
+        color: hotpink;
+      }
+      #element {
+        color: aqua;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        margin-bottom: 200px;
+      }
+
+      footer {
+        background-color: midnightblue;
+        height: 50px;
+        width: 95%;
+        margin-left: 40px;
+      }
+
+      .footer {
+        display: flex;
+        padding: 50px 50px 30px 120px;
+        justify-content:space-between;
+      }
+
+      .footer ul{
+        list-style: none;
+        width: 500px;
+        flex-direction: row;
+        margin-right: 50px;
+      }
+
+      .footer-second li{
+        margin-left : 50px;
+      }
+
+      footer .footer-rights{
+        text-align: center;
+        color: gray;
+        margin-bottom:0px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left"><a style="text-decoration: none; color: rgb(243, 240, 240);" href="./index.html">Shashank Singh Bist</a></div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+            <li><a href="/">Memes</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection background">
+        <div class="leftSection">
+          Hi! My name is <span class="name">Shashank Singh Bist</span>
+          <div>And i am a <span class="title">Salesforce Developer</span></div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn" type = "button" onclick = "downloadFile()"> Download Resume </button>
+            <button class="btn" type = "button" onclick = "visitGit()"> Visit Github </button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="./Images/home-gif.gif" alt="home-gif" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <h1>Past Experience</h1>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Shashank's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li><a href="/contact.html">Contact</a></li>
+            <!-- <li>Memes</li> -->
+          </ul>
+        </div>
+        <!--<div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+          </ul>
+        </div>
+         <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+          </ul>
+        </div> -->
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; ssb.com &#8482; | All rights reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Automotive Enthusiast", "Entreprenuer", "Chef", "Wanna Be Racer"],
+        typeSpeed: 50,
+      });
+      
+      function downloadFile() {
+        window.open("https://github.com/shashankbist/Resume/blob/main/Shashank%20Singh%20Bist%20Resume%20Salesforce.pdf")
+     }
+
+     function visitGit() {
+      window.open("https://github.com/shashankbist")
+   }
+      
+    </script>
+  </body>
+</html>
